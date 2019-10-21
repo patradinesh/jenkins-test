@@ -24,5 +24,10 @@ pipeline {
                 echo "Hello Jenkins!! This is Deploy Phase "
             }
         }
+        stage('Validate') {
+            steps {
+                echo "Hello Jenkins!! This is Validate Phase "
+            }
+        }
     }
 }
