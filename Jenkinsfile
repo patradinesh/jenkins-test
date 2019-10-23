@@ -27,9 +27,10 @@ pipeline {
         stage('Validate') {
             steps {
                 echo "Hello Jenkins!! This is Validate Phase "
+                slackSend channel: 'aws-devops-colloboration', message: 'test'
 
         }
-        slackSend channel: 'aws-devops-colloboration', message: 'test'
+
       }
     }
 }
