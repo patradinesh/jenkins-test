@@ -27,7 +27,7 @@ pipeline {
         stage('Validate') {
             steps {
                 echo "Hello Jenkins!! This is Validate Phase "
-                slackSend channel: 'jenkins', message: 'first ', teamDomain: 'dinesh-jcn2534', tokenCredentialId: 'dinesh-slack'
+                slackSend channel: '#patra', message: 'This realy works ', teamDomain: 'dinesh-jcn2534', tokenCredentialId: 'dinesh-slack'
         }
 
       }
