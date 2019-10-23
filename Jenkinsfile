@@ -27,7 +27,7 @@ pipeline {
         stage('Validate') {
             steps {
                 echo "Hello Jenkins!! This is Validate Phase "
-                slackSend channel: 'aws-devops-colloboration', message: 'test'
+                slackSend teamDomain: 'acxiom.slack.com', channel: '#aws-devops-colloboration', message: 'test'
 
         }
 
